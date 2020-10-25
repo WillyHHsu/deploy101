@@ -10,7 +10,7 @@ model = bst.load_model('model/model.bst')
 
 @app.route('/')
 def alive():
-    return model()
+    return print('alive')
 
 @app.route('/predict', methods = ['POST'])
 def predict():
